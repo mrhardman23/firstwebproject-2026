@@ -22,8 +22,8 @@
       <fieldset form="knowing-you">
         <legend>Contact Information</legend>
 
-        <label for="name">Full Name (ex. Sam Doe) [required]:</label>
-        <input type="text" id="name" name="full-name" required />
+        <label for="full-name">Full Name (ex. Sam Doe) [required]:</label>
+        <input type="text" id="full-name" name="name" required />
         <br />
         <br />
 
@@ -95,8 +95,81 @@
           <br />
         </fieldset>
         <!-- End of sub fieldset -->
+        <br />
+        <fieldset form="knowing-you">
+          <legend>Which continents would you like to travel to?</legend>
+          <input
+            type="checkbox"
+            id="north-america"
+            name="north-america"
+            value="north-america" />
+          <label for="north-america">North America</label>
+          <br />
+          <input
+            type="checkbox"
+            id="south-america"
+            name="south-america"
+            value="south-america" />
+          <label for="south-america">South America</label>
+          <br />
+          <input
+            type="checkbox"
+            id="antarctica"
+            name="antarctica"
+            value="antarctica" />
+          <label for="antarctica">Antarctica</label>
+          <br />
+          <input type="checkbox" id="europe" name="europe" value="europe" />
+          <label for="europe">Europe</label>
+          <br />
+          <input type="checkbox" id="africa" name="africa" value="africa" />
+          <label for="africa">Africa</label>
+          <br />
+          <input type="checkbox" id="asia" name="asia" value="asia" />
+          <label for="asia">Asia</label>
+          <br />
+          <input
+            type="checkbox"
+            id="australia"
+            name="australia"
+            value="australia" />
+          <label for="australia">Australia</label>
+          <br />
+        </fieldset>
+        <br />
+        <!-- Creating a select input for favourite sport -->
+        <label for="favourite-sport"
+          >What is your favourite sport? [required] &nbsp;</label
+        >
+        <select id="favourite-sport" name="sport" required>
+          <option value="american-football">American Football</option>
+          <option value="badminton">Badminton</option>
+          <option value="baseball">Baseball</option>
+          <option value="basketball">Basketball</option>
+          <option value="cricket">Cricket</option>
+          <option value="dodgeball">Dodgeball</option>
+          <option value="figure-skating">Figure Skating</option>
+          <option value="football">Football</option>
+          <option value="golf">Golf</option>
+          <option value="hockey">Hockey</option>
+          <option value="swimming">Swimming</option>
+          <option value="tennis">Tennis</option>
+          <option value="other">Other</option>
+        </select>
+        <br />
+        <br />
+        <!-- Creating a textarea for additional comments -->
+        <label>Any additional comments?</label>
+        <br />
+        <textarea
+          id="additional-comments"
+          name="comments"
+          rows="8"
+          cols="40"></textarea>
+        <br />
       </fieldset>
       <!-- End of 2nd fieldset -->
+
       <br />
       <br />
 
