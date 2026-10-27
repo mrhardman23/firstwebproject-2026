@@ -6,189 +6,222 @@
     <title>HTML Forms Practice</title>
   </head>
   <body>
-    <h1>HTML Forms Practice</h1>
-    <!--
-      This does not necessarily need to be an h2. It could be a paragraph and
-      that would be fine.
-    -->
-    <h2>
-      NOTE: The form on this page is for a school project. DO NOT PUT ANY
-      PERSONAL INFORMATION INTO THE FORM BELOW!
-    </h2>
+    <header>
+      <!--
+        Creating the main navigation for the page.
 
-    <h3>Getting to Know My Users</h3>
-    <form id="knowing-you" name="getting-to-know-you" method="get">
-      <!-- 1st fieldset for Contact Information -->
-      <fieldset form="knowing-you">
-        <legend>Contact Information</legend>
+        This format of nav > ul > li > a is the industry
+        standard for creating main navigation!
 
-        <label for="full-name">Full Name (ex. Sam Doe) [required]:</label>
-        <input type="text" id="full-name" name="name" required />
-        <br />
-        <br />
+        We will be using this forever going forward!
+      -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Practice Home Page</a></li>
+          <li>
+            <a href="headings-and-paragraphs.html">
+              Headings and Paragraphs Practice
+            </a>
+          </li>
+          <li><a href="links-and-images.html">Links and Images Practice</a></li>
+          <li>
+            <a href="iframes-lists-tables.html"
+              >IFrames, Lists, and Tables Practice</a
+            >
+          </li>
+          <li><a href="forms.html">Forms Practice</a></li>
+        </ul>
+      </nav>
+      <h1>HTML Forms Practice</h1>
+    </header>
+    <main>
+      <!--
+        This does not necessarily need to be an h2. It could be a paragraph and
+        that would be fine.
+      -->
+      <h2>
+        NOTE: The form on this page is for a school project. DO NOT PUT ANY
+        PERSONAL INFORMATION INTO THE FORM BELOW!
+      </h2>
 
-        <label for="email-address">
-          Email Address (ex. example@domain.com) [required]:
-        </label>
-        <input type="email" id="email-address" name="email" required />
-        <br />
-        <br />
-
-        <label for="phone-number">Phone Number (ex. 1-888-867-5309):</label>
-        <input type="tel" id="phone-number" name="phone" />
-      </fieldset>
-      <!-- End of 1st fieldset -->
-      <br />
-      <br />
-      <!-- Start of 2nd fieldset about User Interests -->
-      <fieldset form="knowing-you">
-        <legend>User Interests</legend>
-
-        <label for="free-time">
-          What do you like to do in your free time? [required]
-        </label>
-        <input type="text" id="free-time" name="hobby" required />
-        <br />
-        <br />
-
-        <label for="hours-for-hobby">
-          How many hours a week do you get to do this hobby? [required]
-        </label>
-        <input type="number" id="hours-for-hobby" name="hours" required />
-        <br />
-        <br />
-
-        <!-- Sub Fieldset for Favourite Music Genre -->
+      <h3>Getting to Know My Users</h3>
+      <form id="knowing-you" name="getting-to-know-you" method="get">
+        <!-- 1st fieldset for Contact Information -->
         <fieldset form="knowing-you">
-          <legend>What music genre do you listen to the most?</legend>
+          <legend>Contact Information</legend>
 
-          <input type="radio" name="genre" id="rock" value="rock" />
-          <label for="rock">Rock Music</label>
+          <label for="full-name">Full Name (ex. Sam Doe) [required]:</label>
+          <input type="text" id="full-name" name="name" required />
+          <br />
           <br />
 
-          <input type="radio" name="genre" id="hip-hop" value="hip-hop" />
-          <label for="hip-hop">Hip-Hop Music</label>
+          <label for="email-address">
+            Email Address (ex. example@domain.com) [required]:
+          </label>
+          <input type="email" id="email-address" name="email" required />
+          <br />
           <br />
 
-          <input type="radio" name="genre" id="rap" value="rap" />
-          <label for="rap">Rap Music</label>
+          <label for="phone-number">Phone Number (ex. 1-888-867-5309):</label>
+          <input type="tel" id="phone-number" name="phone" />
+        </fieldset>
+        <!-- End of 1st fieldset -->
+        <br />
+        <br />
+        <!-- Start of 2nd fieldset about User Interests -->
+        <fieldset form="knowing-you">
+          <legend>User Interests</legend>
+
+          <label for="free-time">
+            What do you like to do in your free time? [required]
+          </label>
+          <input type="text" id="free-time" name="hobby" required />
+          <br />
           <br />
 
-          <input type="radio" name="genre" id="country" value="country" />
-          <label for="country">Country Music</label>
+          <label for="hours-for-hobby">
+            How many hours a week do you get to do this hobby? [required]
+          </label>
+          <input type="number" id="hours-for-hobby" name="hours" required />
+          <br />
           <br />
 
-          <input type="radio" name="genre" id="metal" value="metal" />
-          <label for="metal">Metal Music</label>
+          <!-- Sub Fieldset for Favourite Music Genre -->
+          <fieldset form="knowing-you">
+            <legend>What music genre do you listen to the most?</legend>
+
+            <input type="radio" name="genre" id="rock" value="rock" />
+            <label for="rock">Rock Music</label>
+            <br />
+
+            <input type="radio" name="genre" id="hip-hop" value="hip-hop" />
+            <label for="hip-hop">Hip-Hop Music</label>
+            <br />
+
+            <input type="radio" name="genre" id="rap" value="rap" />
+            <label for="rap">Rap Music</label>
+            <br />
+
+            <input type="radio" name="genre" id="country" value="country" />
+            <label for="country">Country Music</label>
+            <br />
+
+            <input type="radio" name="genre" id="metal" value="metal" />
+            <label for="metal">Metal Music</label>
+            <br />
+
+            <input type="radio" name="genre" id="jazz" value="jazz" />
+            <label for="jazz">Jazz Music</label>
+            <br />
+
+            <input type="radio" name="genre" id="classical" value="classical" />
+            <label for="classical">Classical Music</label>
+            <br />
+
+            <input type="radio" name="genre" id="other" value="other" />
+            <label for="other">Other Genre Not Listed</label>
+            <br />
+          </fieldset>
+          <!-- End of sub fieldset -->
+          <br />
+          <fieldset form="knowing-you">
+            <legend>Which continents would you like to travel to?</legend>
+            <input
+              type="checkbox"
+              id="north-america"
+              name="north-america"
+              value="north-america" />
+            <label for="north-america">North America</label>
+            <br />
+            <input
+              type="checkbox"
+              id="south-america"
+              name="south-america"
+              value="south-america" />
+            <label for="south-america">South America</label>
+            <br />
+            <input
+              type="checkbox"
+              id="antarctica"
+              name="antarctica"
+              value="antarctica" />
+            <label for="antarctica">Antarctica</label>
+            <br />
+            <input type="checkbox" id="europe" name="europe" value="europe" />
+            <label for="europe">Europe</label>
+            <br />
+            <input type="checkbox" id="africa" name="africa" value="africa" />
+            <label for="africa">Africa</label>
+            <br />
+            <input type="checkbox" id="asia" name="asia" value="asia" />
+            <label for="asia">Asia</label>
+            <br />
+            <input
+              type="checkbox"
+              id="australia"
+              name="australia"
+              value="australia" />
+            <label for="australia">Australia</label>
+            <br />
+          </fieldset>
           <br />
 
-          <input type="radio" name="genre" id="jazz" value="jazz" />
-          <label for="jazz">Jazz Music</label>
+          <!-- Creating a select input for favourite sport -->
+          <label for="favourite-sport">
+            What is your favourite sport? [required] &nbsp;
+          </label>
+          <select id="favourite-sport" name="sport" required>
+            <option value="american-football">American Football</option>
+            <option value="badminton">Badminton</option>
+            <option value="baseball">Baseball</option>
+            <option value="basketball">Basketball</option>
+            <option value="cricket">Cricket</option>
+            <option value="dodgeball">Dodgeball</option>
+            <option value="figure-skating">Figure Skating</option>
+            <option value="football">Football</option>
+            <option value="golf">Golf</option>
+            <option value="hockey">Hockey</option>
+            <option value="swimming">Swimming</option>
+            <option value="tennis">Tennis</option>
+            <option value="other">Other</option>
+          </select>
           <br />
-
-          <input type="radio" name="genre" id="classical" value="classical" />
-          <label for="classical">Classical Music</label>
           <br />
-
-          <input type="radio" name="genre" id="other" value="other" />
-          <label for="other">Other Genre Not Listed</label>
+          <!-- Creating a textarea for additional comments -->
+          <label>Any additional comments?</label>
+          <br />
+          <textarea
+            id="additional-comments"
+            name="comments"
+            rows="8"
+            cols="40"></textarea>
           <br />
         </fieldset>
-        <!-- End of sub fieldset -->
-        <br />
-        <fieldset form="knowing-you">
-          <legend>Which continents would you like to travel to?</legend>
-          <input
-            type="checkbox"
-            id="north-america"
-            name="north-america"
-            value="north-america" />
-          <label for="north-america">North America</label>
-          <br />
-          <input
-            type="checkbox"
-            id="south-america"
-            name="south-america"
-            value="south-america" />
-          <label for="south-america">South America</label>
-          <br />
-          <input
-            type="checkbox"
-            id="antarctica"
-            name="antarctica"
-            value="antarctica" />
-          <label for="antarctica">Antarctica</label>
-          <br />
-          <input type="checkbox" id="europe" name="europe" value="europe" />
-          <label for="europe">Europe</label>
-          <br />
-          <input type="checkbox" id="africa" name="africa" value="africa" />
-          <label for="africa">Africa</label>
-          <br />
-          <input type="checkbox" id="asia" name="asia" value="asia" />
-          <label for="asia">Asia</label>
-          <br />
-          <input
-            type="checkbox"
-            id="australia"
-            name="australia"
-            value="australia" />
-          <label for="australia">Australia</label>
-          <br />
-        </fieldset>
-        <br />
-        <!-- Creating a select input for favourite sport -->
-        <label for="favourite-sport"
-          >What is your favourite sport? [required] &nbsp;</label
-        >
-        <select id="favourite-sport" name="sport" required>
-          <option value="american-football">American Football</option>
-          <option value="badminton">Badminton</option>
-          <option value="baseball">Baseball</option>
-          <option value="basketball">Basketball</option>
-          <option value="cricket">Cricket</option>
-          <option value="dodgeball">Dodgeball</option>
-          <option value="figure-skating">Figure Skating</option>
-          <option value="football">Football</option>
-          <option value="golf">Golf</option>
-          <option value="hockey">Hockey</option>
-          <option value="swimming">Swimming</option>
-          <option value="tennis">Tennis</option>
-          <option value="other">Other</option>
-        </select>
-        <br />
-        <br />
-        <!-- Creating a textarea for additional comments -->
-        <label>Any additional comments?</label>
-        <br />
-        <textarea
-          id="additional-comments"
-          name="comments"
-          rows="8"
-          cols="40"></textarea>
-        <br />
-      </fieldset>
-      <!-- End of 2nd fieldset -->
+        <!-- End of 2nd fieldset -->
 
-      <br />
-      <br />
+        <br />
+        <br />
 
-      <!-- Submit Button -->
-      <input
-        type="submit"
-        id="submit-button"
-        name="submit"
-        value="Click to Submit this Form" />
-      <br />
-      <br />
-      <br />
+        <!-- Submit Button -->
+        <input
+          type="submit"
+          id="submit-button"
+          name="submit"
+          value="Click to Submit this Form" />
+        <br />
+        <br />
+        <br />
 
-      <!-- Reset Button -->
-      <input
-        type="reset"
-        id="reset-button"
-        name="reset"
-        value="Click to Clear All Values in this Form" />
-    </form>
+        <!-- Reset Button -->
+        <input
+          type="reset"
+          id="reset-button"
+          name="reset"
+          value="Click to Clear All Values in this Form" />
+      </form>
+    </main>
+    <footer>
+      <p><b>&#169;2026 Mr. Hardman</b></p>
+    </footer>
   </body>
 </html>
