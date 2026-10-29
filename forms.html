@@ -45,20 +45,81 @@
       </h2>
 
       <h3>Getting to Know My Users</h3>
+
+      <!--
+        This form tag is a container that will allow the user to provide
+        information about themselves to the developer.
+
+        The form has an ID so that the developer can link fieldsets to the
+        form.
+
+        The form has a name so that screen readers provide information about
+        what this form's purpose is.
+
+        The form will display all inputs at the end of the URL because of the get
+        method.
+      -->
       <form id="knowing-you" name="getting-to-know-you" method="get">
         <!-- 1st fieldset for Contact Information -->
+        <!-- 
+          This fieldset is used to group related inputs that are all asking
+          about the user's contact information.
+
+          This fieldset is linked to my form so that the HTML code knows
+          which form this fieldset belongs to.
+        -->
         <fieldset form="knowing-you">
+          <!-- 
+            This provides a title for the fieldset so that the user knows 
+            what information will be requested of them. 
+          -->
           <legend>Contact Information</legend>
 
+          <!-- 
+            This is a label for the text input that will ask the user for 
+            their full name. 
+          -->
           <label for="full-name">Full Name (ex. Sam Doe) [required]:</label>
+
+          <!--
+            This creates a text input box where users will enter their first and
+            last name.
+
+            It has an ID of full-name so that the label for this input can be
+            linked to this input.
+
+            The name is so that the back-end server will know what information
+            is being provided by this input.
+
+            It is also a required input, meaning the user will not be able to
+            leave this blank.
+          -->
           <input type="text" id="full-name" name="name" required />
+
+          <!-- This adds additional whitespace between this input and the next input. -->
           <br />
           <br />
 
+          <!-- 
+            This label is for the input that will allow the user to
+            enter their email address.
+          -->
           <label for="email-address">
             Email Address (ex. example@domain.com) [required]:
           </label>
+          <!-- 
+            This creates an email input that will allow users to enter their
+            email address.
+
+            The ID allows the label to be linked to this email input.
+
+            The name lets the back-end know what data is being sent to it.
+
+            It is a required input so users need to fill it in to progress.
+          -->
           <input type="email" id="email-address" name="email" required />
+
+          <!-- This adds additional whitespace between this input and the next input. -->
           <br />
           <br />
 
